@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+}
+.col-sidebar{
+    width: 33.3%;
+    margin: 0 auto;
+    border: 1px solid red;	
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	position: relative; /*para que no se reescriba*/
+}
+
+#wrap-slider {
+	/*border: 1px solid green;*/
+	width: 100%;
+	/*max-width: 420px;*/
+	position: relative;
+	overflow: hidden;
+}
+
+#slider {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	width: 300%;/*la cantidad de imagenes*/
+}
+#slider li {
+	width: 100%;
+}
+#slider img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.btn-prev,.btn-next {
+	/*width: 400px;*/
+	/*height: 400px;*/
+	/*background: rgba(255,255,255,255,0.5);*/
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	/*line-height: 40px; */
+	/*font-size: 22px;*/
+	/*font-weight: bold;*/
+	/*text-align: center;*/
+	/*border-radius: 500%;*/
+	/*font-family: monospace;*/
+	cursor: pointer;
+}
+
+/*.btn-prev:hover,.btn-next:hover {
+	background: rgba(255,255,255,255,1);
+}*/
+
+.btn-prev {
+	left: 10px;
+}
+.btn-next {
+	right: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.catalog-item-data {
+	background-image: url('price.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 97px;
+    border: 1px solid red;
+    font-size: 13px;
+    height: 70px;
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    line-height: 37px;
+    text-align: center;
+}
+
+.catalog-item-data>em {
+	font-size: 1.5rem;
+}
+
+#wrap-slider {
+	border: 18px solid red;
+}
+.catalog-item-description {
+	position: absolute;
+	top: 3px;
+}
+
+
+.catalog-item-description>p {
+	color: blue;
+    width: 14rem;
+    font-size: 1rem;
+    position: relative;
+    right: -10rem;
+    top: -2rem;
+    border: 1px solid green;
+    height: 5rem;
+}
+
+/* proof ubicaciones de title */
+.catalog-item-description {
+	text-align: center;
+}
+
+/*.catalog-item-description>p,
+.catalog-item-data {
+	position: relative;
+}*/
+
+/*.catalog-item-data {
+	background-image: url('price.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 10px;
+	top: 72px;
+}
+.catalog-item-description>p {
+	width: 20px;
+	right: -102px;
+	top: -35;
+}*/
